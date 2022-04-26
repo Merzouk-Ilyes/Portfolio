@@ -10,7 +10,7 @@
 
 
 .cursor {
-  /* position: fixed;
+  position: fixed;
   left: 10px;
   top: 24px;
   width: 40px;
@@ -19,8 +19,8 @@
   background-color: transparent;
   border: 1px solid #fff;
   mix-blend-mode: difference;
-  z-index: 999; */
-  /* pointer-events: none; */
+  z-index: 999; 
+   pointer-events: none;
 }
 
 

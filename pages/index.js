@@ -10,8 +10,10 @@ import {
   AiFillLinkedin,
 } from "react-icons/ai";
 import Link from "next/link";
+import Layout from "../components/layout"
 export default function Home() {
   return (
+    <Layout >
     <div
      
       className="App h-[100vh]  relative bg-white dark:bg-black "
@@ -61,5 +63,6 @@ export default function Home() {
       </div>
       <Cursor />
     </div>
+    </Layout>
   );
 }

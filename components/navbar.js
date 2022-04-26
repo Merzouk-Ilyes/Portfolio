@@ -18,6 +18,7 @@ import {
 } from "../public/sass/navbar.module.sass";
 import { useTheme } from "next-themes";
 import { useState, useEffect } from "react";
+import {Link} from "next/link"
 function Navbar() {
   const [mounted, setMounted] = useState(false);
 
@@ -55,10 +56,10 @@ function Navbar() {
       <div className="text-black dark:text-white">Merzouk ilyes</div>
       <div className={navbar_links_lg}>
         <div className="flex  items-center">
-          <a className={`${link}  text-gray-400  mx-5 `}>About</a>
-          <a className={`${link}  text-gray-400  mx-5 `}>Projects</a>
-          <a className={`${link}  text-gray-400  mx-5 `}>Skills</a>
-          <a className={`${link}  text-gray-400  mx-5 `}>Contact</a>
+        <Link href="/about"> <a className={`${link}  text-gray-400  mx-5 `}>About</a> </Link> 
+        <Link href="/about"> <a className={`${link}  text-gray-400  mx-5 `}>Projects</a></Link> 
+        <Link href="/about"> <a className={`${link}  text-gray-400  mx-5 `}>Skills</a></Link> 
+        <Link href="/about"> <a className={`${link}  text-gray-400  mx-5 `}>Contact</a></Link> 
           <div className="mx-5">{renderThemeChanger()}</div>
         </div>
       </div>
