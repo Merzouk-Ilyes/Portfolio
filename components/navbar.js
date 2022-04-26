@@ -16,31 +16,50 @@ import {
   navbar_links_sm,
   link,
 } from "../public/sass/navbar.module.sass";
+import { useTheme } from "next-themes";
+import { useState, useEffect } from "react";
 function Navbar() {
-  const { isOpen, onOpen, onClose } = useDisclosure();
+  const [mounted, setMounted] = useState(false);
 
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+  const { isOpen, onOpen, onClose } = useDisclosure();
+  const { systemTheme, theme, setTheme } = useTheme();
+
+  const renderThemeChanger = () => {
+    if (!mounted) return null;
+    const currentTheme = theme === "system" ? systemTheme : theme;
+
+    if (currentTheme === "dark") {
+      return (
+        <IconButton
+          fontSize="22px"
+          colorScheme="white"
+          icon={<BsFillSunFill />}
+          onClick={() => setTheme("light")}
+        />
+      );
+    } else {
+      return (
+        <IconButton
+          fontSize="22px"
+          icon={<MdDarkMode />}
+          onClick={() => setTheme("dark")}
+        />
+      );
+    }
+  };
   return (
     <div className=" flex justify-between items-center py-[70px] px-[5%]  md:px-[10%]  	">
-      <div className="text-black">Merzouk ilyes</div>
+      <div className="text-black dark:text-white">Merzouk ilyes</div>
       <div className={navbar_links_lg}>
         <div className="flex  items-center">
           <p className={`${link}  text-gray-400  mx-5 `}>About</p>
           <p className={`${link}  text-gray-400  mx-5 `}>Projects</p>
           <p className={`${link}  text-gray-400  mx-5 `}>Skills</p>
           <p className={`${link}  text-gray-400  mx-5 `}>Contact</p>
-          <div className="mx-5">
-            {/* <IconButton
-              variant="outline"
-              
-              fontSize="22px"
-              icon={<BsFillSunFill />}
-            /> */}
-            <IconButton
-              variant="outline"
-              fontSize="22px"
-              icon={<MdDarkMode />}
-            />
-          </div>
+          <div className="mx-5">{renderThemeChanger()}</div>
         </div>
       </div>
 
