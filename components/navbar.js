@@ -55,10 +55,10 @@ function Navbar() {
       <div className="text-black dark:text-white">Merzouk ilyes</div>
       <div className={navbar_links_lg}>
         <div className="flex  items-center">
-          <p className={`${link}  text-gray-400  mx-5 `}>About</p>
-          <p className={`${link}  text-gray-400  mx-5 `}>Projects</p>
-          <p className={`${link}  text-gray-400  mx-5 `}>Skills</p>
-          <p className={`${link}  text-gray-400  mx-5 `}>Contact</p>
+          <a className={`${link}  text-gray-400  mx-5 `}>About</a>
+          <a className={`${link}  text-gray-400  mx-5 `}>Projects</a>
+          <a className={`${link}  text-gray-400  mx-5 `}>Skills</a>
+          <a className={`${link}  text-gray-400  mx-5 `}>Contact</a>
           <div className="mx-5">{renderThemeChanger()}</div>
         </div>
       </div>

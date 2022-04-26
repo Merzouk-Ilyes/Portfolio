@@ -12,8 +12,15 @@ import {
 import Link from "next/link";
 export default function Home() {
   return (
-    <div  before="Hello, There." className="App h-[100vh]  after:content-[attr(before)] after:text-[200px] after:font-[900]  after:tracking-[-20px] after:text-gray-200 after:absolute after:bottom-0 after:left-0 after:z-0 after:opacity-40 relative bg-white dark:bg-black ">
+    <div
+     
+      className="App h-[100vh]  relative bg-white dark:bg-black "
+    >
       <Navbar />
+      <p className="  text-[100px] md:text-[150px] lg:text-[180px]
+        font-[900] tracking-[-20px] dark:text-gray-700 text-gray-200
+         absolute bottom-0 left-0 opacity-40 z-0 " >Hello, There.</p>
+      
       <h1
         className={`${glitch}  +  mt-9 mx-[5%]  md:mx-[10%] lg:mx-[20%]  text-[40px]  md:text-[50px] lg:text-[60px]  dark:text-white`}
       >
@@ -30,24 +37,27 @@ export default function Home() {
       <p className="description dark:text-white leading-[35px] text-gray-600 mx-[5%]  md:mx-[10%] lg:mx-[20%]  text-[15px] md:text-[17px]">
         Working on solutions that leverage best-practice technologies to deliver
         a top user experience is my pleasure. <br /> View my
-        <span className="dark:text-white text-black"> Projects </span> , <span className="dark:text-white text-black"> Skills </span> ,{" "}
-        <span className="dark:text-white text-black"> Contact Me </span>, or send me an email directly at
-        <span className="dark:text-white text-black"> merzouk.ilyase@gmail.com. </span>
+        <span className="dark:text-white text-black"> Projects </span> ,{" "}
+        <span className="dark:text-white text-black"> Skills </span> ,{" "}
+        <span className="dark:text-white text-black"> Contact Me </span>, or
+        send me an email directly at
+        <span className="dark:text-white text-black">
+          {" "}
+          merzouk.ilyase@gmail.com.{" "}
+        </span>
       </p>
-      <Link href="/">
-      <a
-        
-        className="description dark:text-white leading-[35px] mt-[50px] mx-[5%]  md:mx-[10%] lg:mx-[20%] flex items-center text-gray-600  text-[15px] md:text-[17px]"
-      >
-        See more about me <HiArrowNarrowRight className="ml-5 text-[20px]" />{" "}
-      </a>
-      </Link> 
-      <div className="flex mt-8  dark:text-white text-[20px] text-gray-600 mx-[5%]  md:mx-[10%] lg:mx-[20%] ">
-        <FaFacebookF className="mr-7" />
-        <AiOutlineInstagram className="mr-7" />
-        <AiOutlineTwitter className="mr-7" />
-        <AiFillGithub className="mr-7" />
-        <AiFillLinkedin />
+      
+      <Link href="/about"  >
+        <a className="description  w-fit relative z-40   dark:text-white leading-[35px] mt-[50px] mx-[5%]  md:mx-[10%] lg:mx-[20%] flex items-center text-gray-600  text-[15px] md:text-[17px]">
+          See more about me <HiArrowNarrowRight className="ml-5 text-[20px]" />{" "}
+        </a>
+      </Link>
+      <div className="flex mt-8 relative  z-10 dark:text-white text-[20px] text-gray-600 mx-[5%]  md:mx-[10%] lg:mx-[20%] ">
+      <a href="https://www.facebook.com/ilyas.merzouk.90" target="_blank" rel="noopener noreferrer">  <FaFacebookF className="mr-7" /></a> 
+      <a href="https://www.instagram.com/ilyes17_mk/" target="_blank" rel="noopener noreferrer"><AiOutlineInstagram className="mr-7" /> </a> 
+      <a href="https://twitter.com/IlyesReda17" target="_blank" rel="noopener noreferrer"> <AiOutlineTwitter className="mr-7" /></a> 
+      <a href="https://github.com/Merzouk-Ilyes" target="_blank" rel="noopener noreferrer">  <AiFillGithub className="mr-7" /></a> 
+      <a href="https://www.linkedin.com/in/merzouk-ilyes-reda-5154a41b6/" target="_blank" rel="noopener noreferrer"> <AiFillLinkedin /> </a> 
       </div>
       <Cursor />
     </div>
