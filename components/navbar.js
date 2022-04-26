@@ -18,7 +18,7 @@ import {
 } from "../public/sass/navbar.module.sass";
 import { useTheme } from "next-themes";
 import { useState, useEffect } from "react";
-import {Link} from "next/link"
+import Link from "next/link";
 function Navbar() {
   const [mounted, setMounted] = useState(false);
 
@@ -56,10 +56,14 @@ function Navbar() {
       <div className="text-black dark:text-white">Merzouk ilyes</div>
       <div className={navbar_links_lg}>
         <div className="flex  items-center">
-        <Link href="/about"> <a className={`${link}  text-gray-400  mx-5 `}>About</a> </Link> 
-        <Link href="/about"> <a className={`${link}  text-gray-400  mx-5 `}>Projects</a></Link> 
-        <Link href="/about"> <a className={`${link}  text-gray-400  mx-5 `}>Skills</a></Link> 
-        <Link href="/about"> <a className={`${link}  text-gray-400  mx-5 `}>Contact</a></Link> 
+          <Link href="/about"><a className={`${link} dark:before:bg-slate-50 before:bg-[#000000bb] text-gray-400  mx-5 `}>About</a>
+          </Link> 
+          <Link href="/projects"><a className={`${link} dark:before:bg-slate-50 before:bg-[#000000bb] text-gray-400  mx-5 `}>Projects</a>
+          </Link>
+          <Link href="/skills"><a className={`${link} dark:before:bg-slate-50 before:bg-[#000000bb] text-gray-400  mx-5 `}>Skills</a>
+          </Link>
+          <Link href="/contact"><a className={`${link} dark:before:bg-slate-50 before:bg-[#000000bb] text-gray-400  mx-5 `}>Contact</a>
+          </Link>
           <div className="mx-5">{renderThemeChanger()}</div>
         </div>
       </div>

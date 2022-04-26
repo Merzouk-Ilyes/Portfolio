@@ -2,10 +2,9 @@ import Link from "next/link";
 
 function About() {
   return (
-    <div>
-      <Link href="/">
-      <a>hello</a>
-      </Link >
+    <div className="h-[100vh]  relative bg-white dark:bg-black ">
+      
+      
     </div>
   )
 }
