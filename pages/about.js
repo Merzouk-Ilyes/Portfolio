@@ -6,7 +6,7 @@ import Image from "next/image";
 function About() {
   return (
     <Layout>
-      <div className="h-[100vh]  relative bg-white dark:bg-black ">
+      <div className="  relative bg-white dark:bg-black ">
         <Navbar />
         <BgText text="About." />
         <h1 className="ml-[20%] text-[50px] text-black dark:text-white font-[700] ">
@@ -46,25 +46,19 @@ function About() {
               DevOps & Version Control : Git/Github, Docker, Kubernetes, Heroku
             </span>
           </p>
-          <div className="grid  grid-cols-8 gap-4 mt-5">
-            <Image src="/../public/images/logos/html.png"  width="100%" height="100%" layout="responsive" objectFit="contain"  />
-            <Image src="/../public/images/logos/css.png"  width="100%" height="100%" layout="responsive" objectFit="contain"  />
+          <div className="grid  grid-cols-6  gap-4 mt-5 ">
+            <Image src="/../public/images/logos/react.png"  width="100%" height="100%" layout="responsive" objectFit="contain"  />
+            <Image src="/../public/images/logos/node.png"  width="100%" height="100%" layout="responsive" objectFit="contain"  />
             <Image src="/../public/images/logos/js.png"  width="100%" height="100%" layout="responsive" objectFit="contain"  />
             <Image src="/../public/images/logos/ts.png"  width="100%" height="100%" layout="responsive" objectFit="contain" />
-            <Image src="/../public/images/logos/jq.png"  width="100%" height="100%" layout="responsive" objectFit="contain"  />
-            <Image src="/../public/images/logos/node.png"  width="100%" height="100%" layout="responsive" objectFit="contain"  />
-            <Image src="/../public/images/logos/exp.png"  width="100%" height="100%" layout="responsive" objectFit="contain"  />
-            <Image src="/../public/images/logos/react.png"  width="100%" height="100%" layout="responsive" objectFit="contain"  />
+            <Image src="/../public/images/logos/html.png"  width="100%" height="100%" layout="responsive" objectFit="contain"  />
+            <Image src="/../public/images/logos/css.png"  width="100%" height="100%" layout="responsive" objectFit="contain"  />
             <Image src="/../public/images/logos/ng.png"  width="100%" height="100%" layout="responsive" objectFit="contain"  />
-            <Image src="/../public/images/logos/next.png"  width="100%" height="100%" layout="responsive" objectFit="contain"  />
-            <Image src="/../public/images/logos/git.png"  width="100%" height="100%" layout="responsive" objectFit="contain"  />
+            <Image src="/../public/images/logos/git.png"   width="100%" height="100%" layout="responsive" objectFit="contain"  />
             <Image src="/../public/images/logos/fire.png"  width="100%" height="100%" layout="responsive" objectFit="contain"  />
-            <Image src="/../public/images/logos/lara.png"  width="100%" height="100%" layout="responsive" objectFit="contain"  />
             <Image src="/../public/images/logos/spring.png"  width="100%" height="100%" layout="responsive" objectFit="contain"  />
             <Image src="/../public/images/logos/docker.png"  width="100%" height="100%" layout="responsive" objectFit="contain"  />
             <Image src="/../public/images/logos/kub.png"  width="100%" height="100%" layout="responsive" objectFit="contain"  />
-            <Image src="/../public/images/logos/hero.png"  width="100%" height="100%" layout="responsive" objectFit="contain"  />
-            <Image src="/../public/images/logos/cloud.png"  width="100%" height="100%" layout="responsive" objectFit="contain"  />
 
           </div>
           </div>
