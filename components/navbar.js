@@ -53,15 +53,14 @@ function Navbar() {
   };
   return (
     <div className=" flex justify-between items-center py-[70px] px-[5%]  md:px-[10%]  	">
-      <div className="text-black dark:text-white">Merzouk ilyes</div>
+    <Link  href="/"><a className="text-black dark:text-white">Merzouk ilyes</a></Link>
       <div className={navbar_links_lg}>
         <div className="flex  items-center">
           <Link href="/about"><a className={`${link} dark:before:bg-slate-50 before:bg-[#000000bb] text-gray-400  mx-5 `}>About</a>
           </Link> 
           <Link href="/projects"><a className={`${link} dark:before:bg-slate-50 before:bg-[#000000bb] text-gray-400  mx-5 `}>Projects</a>
           </Link>
-          <Link href="/skills"><a className={`${link} dark:before:bg-slate-50 before:bg-[#000000bb] text-gray-400  mx-5 `}>Skills</a>
-          </Link>
+          
           <Link href="/contact"><a className={`${link} dark:before:bg-slate-50 before:bg-[#000000bb] text-gray-400  mx-5 `}>Contact</a>
           </Link>
           <div className="mx-5">{renderThemeChanger()}</div>
@@ -69,7 +68,7 @@ function Navbar() {
       </div>
 
       <div className={navbar_links_sm}>
-        <AiOutlineMenu className="text-[20px]" onClick={onOpen} />
+        <AiOutlineMenu className="text-[20px] dark:text-white " onClick={onOpen} />
         <Drawer placement="top" onClose={onClose} isOpen={isOpen}>
           <DrawerOverlay />
           <DrawerContent>

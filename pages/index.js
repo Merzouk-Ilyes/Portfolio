@@ -5,18 +5,13 @@ import { HiArrowNarrowRight } from "react-icons/hi";
 import Link from "next/link";
 import Layout from "../components/layout";
 import Socials from "../components/socials";
+import BgText from "../components/bgText"
 export default function Home() {
   return (
     <Layout>
       <div className="h-[100vh]  relative bg-white dark:bg-black ">
         <Navbar />
-        <p
-          className="  text-[100px] md:text-[150px] lg:text-[180px]
-        font-[900] tracking-[-18px] dark:text-gray-700 text-gray-200
-         absolute bottom-0 left-0 opacity-40 z-0   "
-        >
-          Hello, There.
-        </p>
+       <BgText  text="Hello, There." />
 
         <h1
           className={`${glitch}  +  mt-9 mx-[5%]  md:mx-[10%] lg:mx-[20%]  text-[40px]  md:text-[50px] lg:text-[60px]  dark:text-white`}
