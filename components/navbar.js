@@ -19,6 +19,8 @@ import {
 import { useTheme } from "next-themes";
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import { motion } from "framer-motion";
+import Logo from "../components/logo"
 function Navbar() {
   const [mounted, setMounted] = useState(false);
 
@@ -53,22 +55,46 @@ function Navbar() {
   };
   return (
     <div className=" flex justify-between items-center py-[70px] px-[5%]  md:px-[10%]  	">
-    <Link  href="/"><a className="text-black dark:text-white">Merzouk ilyes</a></Link>
+      <Link href="/">
+        <a className="text-black dark:text-white">
+          <Logo />
+
+        </a>
+      </Link>
       <div className={navbar_links_lg}>
         <div className="flex  items-center">
-          <Link href="/about"><a className={`${link} dark:before:bg-slate-50 before:bg-[#000000bb] text-gray-400  mx-5 `}>About</a>
-          </Link> 
-          <Link href="/projects"><a className={`${link} dark:before:bg-slate-50 before:bg-[#000000bb] text-gray-400  mx-5 `}>Projects</a>
+          <Link href="/about">
+            <a
+              className={`${link} dark:before:bg-slate-50 before:bg-[#000000bb] text-gray-400  mx-5 `}
+            >
+              About
+            </a>
           </Link>
-          
-          <Link href="/contact"><a className={`${link} dark:before:bg-slate-50 before:bg-[#000000bb] text-gray-400  mx-5 `}>Contact</a>
+
+          <Link href="/projects">
+            <a
+              className={`${link} dark:before:bg-slate-50 before:bg-[#000000bb] text-gray-400  mx-5 `}
+            >
+              Projects
+            </a>
+          </Link>
+
+          <Link href="/contact">
+            <a
+              className={`${link} dark:before:bg-slate-50 before:bg-[#000000bb] text-gray-400  mx-5 `}
+            >
+              Contact
+            </a>
           </Link>
           <div className="mx-5">{renderThemeChanger()}</div>
         </div>
       </div>
 
       <div className={navbar_links_sm}>
-        <AiOutlineMenu className="text-[20px] dark:text-white " onClick={onOpen} />
+        <AiOutlineMenu
+          className="text-[20px] dark:text-white "
+          onClick={onOpen}
+        />
         <Drawer placement="top" onClose={onClose} isOpen={isOpen}>
           <DrawerOverlay />
           <DrawerContent>

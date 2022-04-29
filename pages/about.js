@@ -34,7 +34,7 @@ function About() {
             <br />
             <span>
               {" "}
-              Here are the technologies that i&apos;m most proficient in :
+              Here are the technologies that i&apos;m most proficient at :
               <br />
               <br />
               Front-End : Html/Css, Javascript, Typescript,  React js, Angular, Jquery, Next Js
@@ -43,10 +43,10 @@ function About() {
               Back-End : Node Js/Express Js, Laravel, SpringBoot, Firebase
               <br />
               <br />
-              DevOps & Version Control : Git/Github, Docker, Kubernetes, Heroku
+              DevOps & Version Control : Git, Docker, Kubernetes, Heroku
             </span>
           </p>
-          <div className="grid  grid-cols-6  gap-4 mt-5 ">
+          <div className="grid  grid-cols-10  gap-4 my-8 ">
             <Image src="/../public/images/logos/react.png"  width="100%" height="100%" layout="responsive" objectFit="contain"  />
             <Image src="/../public/images/logos/node.png"  width="100%" height="100%" layout="responsive" objectFit="contain"  />
             <Image src="/../public/images/logos/js.png"  width="100%" height="100%" layout="responsive" objectFit="contain"  />
@@ -54,11 +54,9 @@ function About() {
             <Image src="/../public/images/logos/html.png"  width="100%" height="100%" layout="responsive" objectFit="contain"  />
             <Image src="/../public/images/logos/css.png"  width="100%" height="100%" layout="responsive" objectFit="contain"  />
             <Image src="/../public/images/logos/ng.png"  width="100%" height="100%" layout="responsive" objectFit="contain"  />
-            <Image src="/../public/images/logos/git.png"   width="100%" height="100%" layout="responsive" objectFit="contain"  />
             <Image src="/../public/images/logos/fire.png"  width="100%" height="100%" layout="responsive" objectFit="contain"  />
             <Image src="/../public/images/logos/spring.png"  width="100%" height="100%" layout="responsive" objectFit="contain"  />
             <Image src="/../public/images/logos/docker.png"  width="100%" height="100%" layout="responsive" objectFit="contain"  />
-            <Image src="/../public/images/logos/kub.png"  width="100%" height="100%" layout="responsive" objectFit="contain"  />
 
           </div>
           </div>
@@ -87,7 +85,7 @@ function About() {
 
         </div>
       </div>
-    </Layout>
+     </Layout>
   );
 }
 

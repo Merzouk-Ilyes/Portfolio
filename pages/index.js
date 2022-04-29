@@ -6,6 +6,7 @@ import Link from "next/link";
 import Layout from "../components/layout";
 import Socials from "../components/socials";
 import BgText from "../components/bgText"
+import {motion} from "framer-motion"
 export default function Home() {
   return (
     <Layout>
@@ -42,7 +43,11 @@ export default function Home() {
         <Link href="/about">
           <a className="description  w-fit relative z-40   dark:text-white leading-[35px] mt-[50px] mx-[5%]  md:mx-[10%] lg:mx-[20%] flex items-center text-gray-600  text-[15px] md:text-[17px]">
             See more about me{" "}
-            <HiArrowNarrowRight className="ml-5 text-[20px]" />{" "}
+         <motion.div  
+         initial={{x:0}}
+         animate={{x:20}}
+         transition={{ duration:0.5, yoyo:Infinity}}
+         >  <HiArrowNarrowRight className="ml-5 text-[20px]" /></motion.div> 
           </a>
         </Link>
         <Socials />
