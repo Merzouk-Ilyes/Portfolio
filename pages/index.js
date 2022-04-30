@@ -1,5 +1,4 @@
 import Navbar from "../components/navbar";
-import Cursor from "../components/cursor";
 import { glitch } from "../public/sass/glitch.module.sass";
 import { HiArrowNarrowRight } from "react-icons/hi";
 import Link from "next/link";
@@ -51,7 +50,6 @@ export default function Home() {
           </a>
         </Link>
         <Socials />
-        <Cursor />
       </div>
     </Layout>
   );

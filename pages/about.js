@@ -1,4 +1,3 @@
-import Link from "next/link";
 import Navbar from "../components/navbar";
 import BgText from "../components/bgText";
 import Layout from "../components/layout";
@@ -9,15 +8,15 @@ function About() {
       <div className="  relative bg-white dark:bg-black ">
         <Navbar />
         <BgText text="About." />
-        <h1 className="ml-[20%] text-[50px] text-black dark:text-white font-[700] ">
+        <h1 className=" mx-[5%] md:mx-[10%]  lg:ml-[20%] text-[40px]  md:text-[50px] lg:text-[60px] text-black dark:text-white font-[700] ">
           About Me.
         </h1>
-        <div className="flex flex-wrap ml-[20%]  mr-[15%]  justify-between ">
+        <div className="flex flex-wrap mx-[5%] md:mx-[10%] lg:ml-[20%]  lg:mr-[15%]  justify-between ">
           <div>
           <p
             className="text-black dark:text-white
            leading-[25px] tracking-wide	
-           text-[16px]   w-[550px]  "
+           text-[15px] md:text-[17px]  w-[380px]    md:w-[550px]  "
           >
             Hello! My name is Merzouk Ilyes, My interest in web development
             started back in 2018 when i created my first travel agency landing
@@ -46,7 +45,7 @@ function About() {
               DevOps & Version Control : Git, Docker, Kubernetes, Heroku
             </span>
           </p>
-          <div className="grid  grid-cols-10  gap-4 my-8 ">
+          <div className="grid   grid-cols-5 md:grid-cols-10  gap-4 my-8 ">
             <Image src="/../public/images/logos/react.png"  width="100%" height="100%" layout="responsive" objectFit="contain"  />
             <Image src="/../public/images/logos/node.png"  width="100%" height="100%" layout="responsive" objectFit="contain"  />
             <Image src="/../public/images/logos/js.png"  width="100%" height="100%" layout="responsive" objectFit="contain"  />
@@ -60,13 +59,13 @@ function About() {
 
           </div>
           </div>
-          <div className="relative  ">
+          <div className="relative   ">
             <Image
               src="/../public/images/pic1.jpg"
               alt="Picture of the author"
               height="450px"
               width="300px"
-              className="rounded-xl drop-shadow-2xl z-20  grayscale hover:grayscale-0 transition  delay-150 "
+              className="rounded-xl   drop-shadow-2xl z-20  grayscale hover:grayscale-0 transition  delay-150 "
             />
             <div
               className="absolute h-[450px] w-[300px]
@@ -85,6 +84,7 @@ function About() {
 
         </div>
       </div>
+
      </Layout>
   );
 }

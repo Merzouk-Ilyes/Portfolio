@@ -23,17 +23,18 @@ import { motion } from "framer-motion";
 import Logo from "../components/logo"
 function Navbar() {
   const [mounted, setMounted] = useState(false);
+  const { systemTheme, theme, setTheme } = useTheme();
+  const { isOpen, onOpen, onClose } = useDisclosure();
 
   useEffect(() => {
     setMounted(true);
   }, []);
-  const { isOpen, onOpen, onClose } = useDisclosure();
-  const { systemTheme, theme, setTheme } = useTheme();
+
+  console.log(theme)
 
   const renderThemeChanger = () => {
     if (!mounted) return null;
     const currentTheme = theme === "system" ? systemTheme : theme;
-
     if (currentTheme === "dark") {
       return (
         <IconButton
@@ -44,6 +45,7 @@ function Navbar() {
         />
       );
     } else {
+
       return (
         <IconButton
           fontSize="22px"
