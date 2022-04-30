@@ -1,27 +1,62 @@
 import React from "react";
-import {container,card,pic,social } from '../public/sass/projectCard.module.sass'
+import Image from "next/image";
+import { Button, Stack, Tag, TagLabel } from "@chakra-ui/react";
+import { AiFillGithub } from "react-icons/ai";
+import { BsEyeglasses } from "react-icons/bs";
 function ProjectCard() {
   return (
     <>
-      <div className={container}>
-        <div className={card}>
-          <h2>E-Commerce</h2>
-          {/* <i className="fas fa-arrow-right"></i> */}
-          <p>a lonely trip.</p>
-          <div className={pic}></div>
+      <div className="figure-container">
+        <Image
+          src="/../public/images/g1.gif"
+          alt="gif"
+          width="100%"
+          height="100%"
+          layout="responsive"
+          objectFit="fill"
+        />
 
-          <div className={social}>
-            {/* <i className="fab fa-facebook-f"></i>
-            <i className="fab fa-twitter"></i>
-            <i className="fab fa-instagram"></i>
-            <i className="fab fa-github"></i> */}
+        <div className="figcaption-container">
+          <h3 className="text-[30px] font-bold">E Commerce </h3>
+          <div className="grid  gap-2 grid-cols-5 my-3">
+            <CustomTag title="React" />
+            <CustomTag title="React" />
+            <CustomTag title="React" />
           </div>
-          <button></button>
+          <Stack direction="row" spacing={4}>
+            <Button
+              leftIcon={<AiFillGithub />}
+              colorScheme="teal"
+              variant="outline"
+            >
+              Github
+            </Button>
+            <Button
+              leftIcon={<BsEyeglasses />}
+              colorScheme="teal"
+              variant="solid"
+            >
+              Live demo
+            </Button>
+          </Stack>
         </div>
-       
       </div>
     </>
   );
 }
 
 export default ProjectCard;
+
+const CustomTag = ({ title }) => {
+  return (
+    <Tag
+      size={"md"}
+     
+      // borderRadius="full"
+      variant="solid"
+      colorScheme="gray"
+    >
+      {title}
+    </Tag>
+  );
+};

@@ -1,4 +1,5 @@
 import "../styles/globals.css";
+import "../styles/projectCard.scss";
 import { ChakraProvider } from "@chakra-ui/react";
 import { ThemeProvider } from "next-themes";
 import { AnimatePresence } from "framer-motion";
