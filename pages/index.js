@@ -1,8 +1,8 @@
 import Navbar from "../components/navbar";
+import Layout from "../components/layout";
 import { glitch } from "../public/sass/glitch.module.sass";
 import { HiArrowNarrowRight } from "react-icons/hi";
 import Link from "next/link";
-import Layout from "../components/layout";
 import Socials from "../components/socials";
 import BgText from "../components/bgText"
 import {motion} from "framer-motion"
