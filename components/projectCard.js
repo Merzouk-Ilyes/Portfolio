@@ -1,12 +1,11 @@
-import React from "react";
 import Image from "next/image";
-import { Button, Stack, Tag, TagLabel } from "@chakra-ui/react";
+import { Tag, Stack, Button } from "@chakra-ui/react";
 import { AiFillGithub } from "react-icons/ai";
 import { BsEyeglasses } from "react-icons/bs";
-function ProjectCard() {
+export default function ProjectCard() {
   return (
-    <>
-      <div className="figure-container">
+    <div className="card ">
+      <div className="h-[38%] w-[100%]">
         <Image
           src="/../public/images/g1.gif"
           alt="gif"
@@ -15,48 +14,39 @@ function ProjectCard() {
           layout="responsive"
           objectFit="fill"
         />
-
-        <div className="figcaption-container">
-          <h3 className="text-[30px] font-bold">E Commerce </h3>
-          <div className="grid  gap-2 grid-cols-5 my-3">
-            <CustomTag title="React" />
-            <CustomTag title="React" />
-            <CustomTag title="React" />
-          </div>
-          <Stack direction="row" spacing={4}>
-            <Button
-              leftIcon={<AiFillGithub />}
-              colorScheme="teal"
-              variant="outline"
-            >
-              Github
-            </Button>
-            <Button
-              leftIcon={<BsEyeglasses />}
-              colorScheme="teal"
+      </div>
+      <div className="content ">
+        <h2 className="text-[27px] font-[700] ">ShopNow</h2>
+        <p className="text-[15px]">An ecommerce website</p>
+        <div className="flex">
+          {["react", "sass", "firebase", "typescript"].map((tech, i) => (
+            <Tag
+              key={i}
+              className="w-fit mr-1 mb-2 bg-slate-500 "
+              borderRadius="full"
               variant="solid"
             >
-              Live demo
-            </Button>
-          </Stack>
+              {tech}
+            </Tag>
+          ))}
         </div>
+        <Stack direction="row"   spacing={4}>
+          <Button
+            leftIcon={<AiFillGithub />}
+            colorScheme="whiteAlpha"
+            // variant="outline"
+          >
+            Github
+          </Button>
+          <Button
+            leftIcon={<BsEyeglasses />}
+            colorScheme="teal"
+            variant="solid"
+          >
+            Live demo
+          </Button>
+        </Stack>
       </div>
-    </>
+    </div>
   );
 }
-
-export default ProjectCard;
-
-const CustomTag = ({ title }) => {
-  return (
-    <Tag
-      size={"md"}
-     
-      // borderRadius="full"
-      variant="solid"
-      colorScheme="gray"
-    >
-      {title}
-    </Tag>
-  );
-};

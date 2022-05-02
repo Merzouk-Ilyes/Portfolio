@@ -11,7 +11,7 @@ function About() {
         <h1 className=" mx-[5%] md:mx-[10%]  lg:ml-[20%] text-[40px]  md:text-[50px] lg:text-[60px] text-black dark:text-white font-[700] ">
           About Me.
         </h1>
-        <div className="flex flex-wrap mx-[5%] md:mx-[10%] lg:ml-[20%]  lg:mr-[15%]  justify-between ">
+        <div className="flex flex-wrap justify-between  mx-[5%] md:mx-[10%] lg:ml-[20%]  lg:mr-[15%]  ">
           <div>
           <p
             className="text-black dark:text-white
