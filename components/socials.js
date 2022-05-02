@@ -8,7 +8,7 @@ import {
 } from "react-icons/ai";
 function Socials() {
   return (
-    <div className="grid grid-cols-5 gap-4 w-[400px]  relative  z-10 dark:text-white text-[27px] text-gray-600 mt-8  mx-[5%]  md:mx-[10%] lg:mx-[20%] ">
+    <div className="grid grid-cols-5 gap-2 w-[370px]  relative  z-10 dark:text-white text-[27px] text-gray-600 my-8  mx-[5%]  md:mx-[10%] lg:mx-[20%] ">
       <a
         href="https://www.facebook.com/ilyas.merzouk.90"
         target="_blank"
