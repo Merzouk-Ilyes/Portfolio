@@ -5,6 +5,9 @@
 * {
   cursor: url("../public/images/cursor.svg"),auto ;
   font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 .description span {
   background-color: rgba(0, 0, 0, 0.058);

@@ -5,8 +5,8 @@
 .card {
   position: relative;
   overflow: hidden;
-  height: 350px;
-  width: 90%;
+  height: 330px;
+  width: 100%;
   color: whitesmoke;
   border-radius: 10px;
   &:before {
@@ -65,9 +65,6 @@
   transition: transform var(--d) var(--e);
   z-index: 100;
 
-  > * + * {
-    margin-top: 1rem;
-  }
 }
 
 @media (hover: hover) {
@@ -78,7 +75,7 @@
   .content {
     transform: translateY(calc(100% - 4.5rem));
 
-    > *:not(.title) {
+    > * {
       opacity: 0;
       transform: translateY(1rem);
       transition: transform var(--d) var(--e), opacity var(--d) var(--e);
@@ -99,7 +96,7 @@
     .content {
       transform: translateY(0);
 
-      > *:not(.title) {
+      > * {
         opacity: 1;
         transform: translateY(0);
         transition-delay: calc(var(--d) / 8);
@@ -111,7 +108,7 @@
     &:before,
     &:after,
     .content,
-    .content > *:not(.title) {
+    .content > * {
       transition-duration: 0s;
     }
   }

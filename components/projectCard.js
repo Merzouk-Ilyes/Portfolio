@@ -4,7 +4,7 @@ import { AiFillGithub } from "react-icons/ai";
 import { BsEyeglasses } from "react-icons/bs";
 export default function ProjectCard() {
   return (
-    <div className="card ">
+    <div className="card">
       <div className="h-[38%] w-[100%]">
         <Image
           src="/../public/images/g1.gif"
@@ -16,13 +16,13 @@ export default function ProjectCard() {
         />
       </div>
       <div className="content ">
-        <h2 className="text-[27px] font-[700] ">ShopNow</h2>
-        <p className="text-[15px]">An ecommerce website</p>
-        <div className="flex">
-          {["react", "sass", "firebase", "typescript"].map((tech, i) => (
+        <h1 className="text-[27px] font-[700] ">ShopNow</h1>
+        <p className="text-[15px] mb-[10px] ">An ecommerce website</p>
+        <div className="flex mb-[30px]">
+          {["react", "firebase", "typescript"].map((tech, i) => (
             <Tag
               key={i}
-              className="w-fit mr-1 mb-2 bg-slate-500 "
+              className="w-fit mr-1  "
               borderRadius="full"
               variant="solid"
             >
@@ -33,14 +33,15 @@ export default function ProjectCard() {
         <Stack direction="row"   spacing={4}>
           <Button
             leftIcon={<AiFillGithub />}
-            colorScheme="whiteAlpha"
+            colorScheme="blackAlpha"
             // variant="outline"
+            
           >
             Github
           </Button>
           <Button
             leftIcon={<BsEyeglasses />}
-            colorScheme="teal"
+            colorScheme="yellow"
             variant="solid"
           >
             Live demo
