@@ -30,12 +30,14 @@ export default function ProjectCard() {
             </Tag>
           ))}
         </div>
-        <Stack direction="row"   spacing={4}>
+        <Stack direction="row" spacing={4}>
           <Button
             leftIcon={<AiFillGithub />}
             colorScheme="blackAlpha"
             // variant="outline"
-            
+            onClick={() =>
+              window.open("https://github.com/Merzouk-Ilyes/Shopnow")
+            }
           >
             Github
           </Button>
@@ -43,6 +45,7 @@ export default function ProjectCard() {
             leftIcon={<BsEyeglasses />}
             colorScheme="yellow"
             variant="solid"
+            onClick={() => window.open("https://shopnow-commerce.netlify.app")}
           >
             Live demo
           </Button>

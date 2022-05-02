@@ -9,8 +9,6 @@ function MyApp({ Component, pageProps }) {
       <ChakraProvider>
         <AnimatePresence
           exitBeforeEnter
-          // initial={false}
-          // onExitComplete={() => window.scrollTo(0, 0)}
         >
           <Component {...pageProps}  />
         </AnimatePresence>

@@ -8,7 +8,7 @@ import {
 } from "react-icons/ai";
 function Socials() {
   return (
-    <div className="grid grid-cols-5 gap-4 w-[400px]  relative  z-10 dark:text-white text-[25px] text-gray-600 mt-8  mx-[5%]  md:mx-[10%] lg:mx-[20%] ">
+    <div className="grid grid-cols-5 gap-4 w-[400px]  relative  z-10 dark:text-white text-[27px] text-gray-600 mt-8  mx-[5%]  md:mx-[10%] lg:mx-[20%] ">
       <a
         href="https://www.facebook.com/ilyas.merzouk.90"
         target="_blank"
@@ -27,6 +27,15 @@ function Socials() {
         <AiOutlineInstagram />{" "}
       </a>
       <a
+        href="https://www.linkedin.com/in/merzouk-ilyes-reda-5154a41b6/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className=" w-fit"
+      >
+        {" "}
+        <AiFillLinkedin />{" "}
+      </a>
+      <a
         href="https://twitter.com/IlyesReda17"
         target="_blank"
         rel="noopener noreferrer"
@@ -43,15 +52,6 @@ function Socials() {
       >
         {" "}
         <AiFillGithub />
-      </a>
-      <a
-        href="https://www.linkedin.com/in/merzouk-ilyes-reda-5154a41b6/"
-        target="_blank"
-        rel="noopener noreferrer"
-        className=" w-fit"
-      >
-        {" "}
-        <AiFillLinkedin />{" "}
       </a>
     </div>
   );

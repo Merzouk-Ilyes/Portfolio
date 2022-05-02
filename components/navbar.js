@@ -19,7 +19,6 @@ import {
 import { useTheme } from "next-themes";
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import { motion } from "framer-motion";
 import Logo from "../components/logo"
 function Navbar() {
   const [mounted, setMounted] = useState(false);
