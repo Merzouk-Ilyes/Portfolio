@@ -6,6 +6,8 @@ import Link from "next/link";
 import { BsArrowRight } from "react-icons/bs";
 import Socials from "../components/socials";
 import { motion } from "framer-motion";
+import { ToastContainer, toast } from "react-toastify";
+
 function Contact() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -15,31 +17,46 @@ function Contact() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    setButtonText("Sending...")
+    setButtonText("Sending...");
 
-      const res = await fetch("/api/sendgrid", {
-        body: JSON.stringify({
-          email: email,
-          name: name,
-          message: message,
-        }),
-        headers: {
-          "Content-Type": "application/json",
-        },
-        method: "POST",
-      });
+    const res = await fetch("/api/sendgrid", {
+      body: JSON.stringify({
+        email: email,
+        name: name,
+        message: message,
+      }),
+      headers: {
+        "Content-Type": "application/json",
+      },
+      method: "POST",
+    });
 
-      const { error } = await res.json();
-      if (error) {
-        console.log(error);
-        setButtonText("Send Message");
-        return;
-      }
+    const { error } = await res.json();
+    if (error) {
+      console.log(error);
+      toast.success("There is an error!");
+      setButtonText("Send Message");
+      return;
+    }
+    toast.success("Your message has been sent!");
     console.log(name, email, message);
+    setButtonText("Send Message");
+
   };
   return (
     <Layout>
       <div className="relative bg-white dark:bg-black pb-5 ">
+        <ToastContainer
+          position="top-center"
+          autoClose={1000}
+          hideProgressBar={false}
+          newestOnTop={false}
+          closeOnClick
+          rtl={false}
+          pauseOnFocusLoss
+          draggable
+          pauseOnHover
+        />
         <Navbar />
         <BgText text="Contact." />
         <h1 className=" mx-[5%] md:mx-[10%]  lg:ml-[20%] text-[40px]  md:text-[50px] lg:text-[60px] text-black dark:text-white font-[700] ">
