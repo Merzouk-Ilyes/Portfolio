@@ -4,7 +4,7 @@ import Layout from "../components/layout";
 import Link from "next/link";
 import { BsArrowRight } from "react-icons/bs";
 import Socials from "../components/socials";
-import {motion} from "framer-motion"
+import { motion } from "framer-motion";
 function Contact() {
   return (
     <Layout>
@@ -14,7 +14,7 @@ function Contact() {
         <h1 className=" mx-[5%] md:mx-[10%]  lg:ml-[20%] text-[40px]  md:text-[50px] lg:text-[60px] text-black dark:text-white font-[700] ">
           Contact.
         </h1>
-        <p className=" font-[200]  mx-[5%] md:mx-[10%]  lg:ml-[20%]  text-[12px] md:text-[15px]">
+        <p className=" font-[200]  mx-[5%] md:mx-[10%]  lg:ml-[20%]  text-[12px] md:text-[15px] text-black dark:text-white">
           Get in touch or shoot me an email directly on{" "}
           <Link href="mailto:merzouk.ilyase@gmail.com">
             <span
@@ -36,7 +36,7 @@ function Contact() {
             placeholder="Name"
             type="text"
             className="border rounded	 w-[400px] md:w-[550px]
-        focus:outline-none
+        focus:outline-none dark:text-white
         py-3 px-7 my-3"
             required
           />
@@ -44,7 +44,7 @@ function Contact() {
             placeholder="Email"
             type="email"
             className="border rounded	 w-[400px] md:w-[550px]
-        focus:outline-none
+        focus:outline-none dark:text-white
         py-3 px-7 my-3"
             required
           />
@@ -52,7 +52,7 @@ function Contact() {
             placeholder="Message"
             type="text"
             className="border rounded	 w-[400px] md:w-[550px]
-        focus:outline-none relative z-20
+        focus:outline-none relative z-20 dark:text-white
         pt-3 pb-[100px] px-7 my-3"
             required
           />
@@ -60,7 +60,8 @@ function Contact() {
           <button
             type="submit"
             className="block relative z-20 py-4
-             px-9 mt-5 bg-black text-white
+             px-8 mt-5 bg-black text-white
+             dark:text-black dark:bg-white
              rounded
              
              "
@@ -68,9 +69,9 @@ function Contact() {
             Send message
           </button>
         </form>
-        <Link href="/about">
+        <Link href="/">
           <a className="description  w-fit relative z-40   dark:text-white leading-[35px] mt-[50px] mx-[5%]  md:mx-[10%] lg:mx-[20%] flex items-center text-gray-600  text-[15px] md:text-[17px]">
-            See more about me{" "}
+            Go back home{" "}
             <motion.div
               initial={{ x: 0 }}
               animate={{ x: 20 }}
