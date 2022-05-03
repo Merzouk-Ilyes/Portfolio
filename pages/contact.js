@@ -1,3 +1,4 @@
+import { useState } from "react";
 import Navbar from "../components/navbar";
 import BgText from "../components/bgText";
 import Layout from "../components/layout";
@@ -6,6 +7,36 @@ import { BsArrowRight } from "react-icons/bs";
 import Socials from "../components/socials";
 import { motion } from "framer-motion";
 function Contact() {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+
+  const [buttonText, setButtonText] = useState("Send Message");
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setButtonText("Sending...")
+
+      const res = await fetch("/api/sendgrid", {
+        body: JSON.stringify({
+          email: email,
+          name: name,
+          message: message,
+        }),
+        headers: {
+          "Content-Type": "application/json",
+        },
+        method: "POST",
+      });
+
+      const { error } = await res.json();
+      if (error) {
+        console.log(error);
+        setButtonText("Send Message");
+        return;
+      }
+    console.log(name, email, message);
+  };
   return (
     <Layout>
       <div className="relative bg-white dark:bg-black pb-5 ">
@@ -31,13 +62,20 @@ function Contact() {
             </span>
           </Link>
         </p>
-        <form className=" mx-[5%] md:mx-[10%]  lg:ml-[20%] my-9 ">
+        <form
+          onSubmit={handleSubmit}
+          className=" mx-[5%] md:mx-[10%]  lg:ml-[20%] my-9 "
+        >
           <input
             placeholder="Name"
             type="text"
             className="border rounded	 w-[400px] md:w-[550px]
         focus:outline-none dark:text-white
         py-3 px-7 my-3"
+            value={name}
+            onChange={(e) => {
+              setName(e.target.value);
+            }}
             required
           />
           <input
@@ -46,6 +84,10 @@ function Contact() {
             className="border rounded	 w-[400px] md:w-[550px]
         focus:outline-none dark:text-white
         py-3 px-7 my-3"
+            value={email}
+            onChange={(e) => {
+              setEmail(e.target.value);
+            }}
             required
           />
           <input
@@ -54,6 +96,10 @@ function Contact() {
             className="border rounded	 w-[400px] md:w-[550px]
         focus:outline-none relative z-20 dark:text-white
         pt-3 pb-[100px] px-7 my-3"
+            value={message}
+            onChange={(e) => {
+              setMessage(e.target.value);
+            }}
             required
           />
 
@@ -66,7 +112,7 @@ function Contact() {
              
              "
           >
-            Send message
+            {buttonText}
           </button>
         </form>
         <Link href="/">
