@@ -6,7 +6,7 @@ import {
   DrawerHeader,
   DrawerOverlay,
   DrawerContent,
-  useDisclosure,
+  useDisclosure,useColorMode,useColorModeValue
 } from "@chakra-ui/react";
 import { AiOutlineMenu } from "react-icons/ai";
 import { BsFillSunFill } from "react-icons/bs";
@@ -19,17 +19,19 @@ import {
 import { useTheme } from "next-themes";
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import Logo from "../components/logo"
+import Logo from "../components/logo";
 function Navbar() {
   const [mounted, setMounted] = useState(false);
   const { systemTheme, theme, setTheme } = useTheme();
   const { isOpen, onOpen, onClose } = useDisclosure();
+  const { colorMode, toggleColorMode } = useColorMode()
+  const bg = useColorModeValue('white', 'black')
 
   useEffect(() => {
     setMounted(true);
   }, []);
 
-  console.log(theme)
+  console.log(theme);
 
   const renderThemeChanger = () => {
     if (!mounted) return null;
@@ -40,16 +42,15 @@ function Navbar() {
           fontSize="22px"
           colorScheme="white"
           icon={<BsFillSunFill />}
-          onClick={() => setTheme("light")}
+          onClick={() => { setTheme("light"); toggleColorMode() }  }
         />
       );
     } else {
-
       return (
         <IconButton
           fontSize="22px"
           icon={<MdDarkMode />}
-          onClick={() => setTheme("dark")}
+          onClick={() => { setTheme("dark"); toggleColorMode() } }
         />
       );
     }
@@ -59,7 +60,6 @@ function Navbar() {
       <Link href="/">
         <a className="text-black dark:text-white">
           <Logo />
-
         </a>
       </Link>
       <div className={navbar_links_lg}>
@@ -93,14 +93,65 @@ function Navbar() {
 
       <div className={navbar_links_sm}>
         <AiOutlineMenu
-          className="text-[20px] dark:text-white "
+          className="text-[25px]  text-black  dark:text-white "
           onClick={onOpen}
         />
-        <Drawer placement="top" onClose={onClose} isOpen={isOpen}>
+        <Drawer placement="top"  bg={bg} onClose={onClose} isOpen={isOpen}>
           <DrawerOverlay />
-          <DrawerContent>
-            <DrawerHeader borderBottomWidth="1px">Logo</DrawerHeader>
-            <DrawerBody></DrawerBody>
+          <DrawerContent bg={bg}>
+            <DrawerHeader
+              borderBottomWidth="1px"
+              className="flex justify-between items-center"
+            >
+              <div>
+                <Link href="/">
+                  <a className="text-black dark:text-white">
+                    <Logo />
+                  </a>
+                </Link>
+              </div>
+              <div  className="flex justify-center items-center">
+                <div className="mx-5">{renderThemeChanger()}</div>
+                <AiOutlineMenu
+                  className="text-[25px] dark:text-white "
+                  onClick={onClose}
+                />
+              </div>
+            </DrawerHeader>
+            <DrawerBody>
+              <div className="flex flex-col jusify-center items-center">
+                <Link href="/">
+                  <a
+                    className={`${link} dark:before:bg-slate-50 before:bg-[#000000bb] text-gray-400  mx-5 my-5 `}
+                  >
+                    Home
+                  </a>
+                </Link>
+                <Link href="/about">
+                  <a
+                    className={`${link} dark:before:bg-slate-50 before:bg-[#000000bb] text-gray-400  mx-5 my-5 `}
+                  >
+                    About
+                  </a>
+                </Link>
+
+                <Link href="/projects">
+                  <a
+                    className={`${link} dark:before:bg-slate-50 before:bg-[#000000bb] text-gray-400  mx-5 my-5 `}
+                  >
+                    Projects
+                  </a>
+                </Link>
+
+                <Link href="/contact">
+                  <a
+                    className={`${link} dark:before:bg-slate-50 before:bg-[#000000bb] text-gray-400  mx-5  my-5`}
+                  >
+                    Contact
+                  </a>
+                </Link>
+              </div>
+            </DrawerBody>
           </DrawerContent>
         </Drawer>
       </div>
