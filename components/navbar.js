@@ -28,6 +28,7 @@ function Navbar() {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const { colorMode, toggleColorMode } = useColorMode();
   const bg = useColorModeValue("white", "black");
+  const [logoDark, setLogoDark] = useState(false);
 
   useEffect(() => {
     setMounted(true);
@@ -47,6 +48,7 @@ function Navbar() {
           onClick={() => {
             setTheme("light");
             toggleColorMode();
+            setLogoDark(false);
           }}
         />
       );
@@ -59,6 +61,7 @@ function Navbar() {
           onClick={() => {
             setTheme("dark");
             toggleColorMode();
+            setLogoDark(true);
           }}
         />
       );
@@ -68,7 +71,7 @@ function Navbar() {
     <div className=" flex justify-between items-center py-[70px] px-[5%]  md:px-[10%]  	">
       <Link href="/">
         <a className="text-black dark:text-white">
-          <Logo />
+          <Logo dark={logoDark} setDark={setLogoDark} />
         </a>
       </Link>
       <div className={navbar_links_lg}>
@@ -89,7 +92,6 @@ function Navbar() {
             </a>
           </Link>
 
-          
           <div className="mx-5">{renderThemeChanger()}</div>
         </div>
       </div>
@@ -109,7 +111,7 @@ function Navbar() {
               <div>
                 <Link href="/">
                   <a className="text-black dark:text-white">
-                    <Logo />
+                    <Logo dark={logoDark} setDark={setLogoDark} />
                   </a>
                 </Link>
               </div>
@@ -145,8 +147,6 @@ function Navbar() {
                     Projects
                   </a>
                 </Link>
-
-               
               </div>
             </DrawerBody>
           </DrawerContent>

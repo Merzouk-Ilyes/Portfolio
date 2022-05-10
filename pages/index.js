@@ -15,6 +15,7 @@ export default function Home() {
       <div className="h-[100vh]  relative bg-white dark:bg-black ">
         <Navbar />
         <BgText text="Hello, There." />
+     <LightMode>
 
         <h1
           className={`${glitch}  +  mt-9 mx-[5%]  md:mx-[10%] lg:mx-[20%]  text-[40px]  md:text-[50px] lg:text-[60px]  dark:text-white`}
@@ -51,6 +52,8 @@ export default function Home() {
             </span>
           </Link>
         </p>
+     </LightMode>
+
 
         <Link href="/about">
           <a className="description  w-fit relative z-40   dark:text-white leading-[35px] mt-[50px] mx-[5%]  md:mx-[10%] lg:mx-[20%] flex items-center text-gray-600  text-[15px] md:text-[17px]">
