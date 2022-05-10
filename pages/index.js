@@ -6,9 +6,11 @@ import Link from "next/link";
 import Socials from "../components/socials";
 import BgText from "../components/bgText";
 import { motion } from "framer-motion";
+import {LightMode} from "@chakra-ui/react"
 
 export default function Home() {
   return (
+    // <LightMode>
     <Layout>
       <div className="h-[100vh]  relative bg-white dark:bg-black ">
         <Navbar />
@@ -38,8 +40,8 @@ export default function Home() {
             <span className="dark:text-white text-black"> Skills </span>
           </Link>{" "}
           ,{" "}
-          <Link href="/contact">
-            <span className="dark:text-white text-black"> Contact Me </span>
+          <Link href="/about">
+            <span className="dark:text-white text-black"> About Me </span>
           </Link>
           , or send me an email directly at
           <Link href="mailto:merzouk.ilyase@gmail.com">
@@ -66,5 +68,6 @@ export default function Home() {
         <Socials />
       </div>
     </Layout>
+    // </LightMode>
   );
 }

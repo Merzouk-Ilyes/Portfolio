@@ -1,0 +1,52 @@
+
+.border
+  height: 480px
+  width: 280px
+  background: transparent
+  border-radius: 10px
+  transition: border .1s
+  position: relative
+
+  &:hover
+    border: 1px solid #F4F6F7
+
+.card
+  height: 500px
+  width: 300px
+  background: grey
+  border-radius: 10px
+  transition: background 0.8s
+  overflow: hidden
+  background: black
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px
+  display: flex
+  justify-content: center
+  align-items: center
+  position: relative
+
+.card0
+  background: url('/images/pic1.jpg') center top no-repeat
+  background-size: 300px
+
+  &:hover
+    background: url('/images/pic1.jpg') left top no-repeat
+    background-size: 600px
+    .social_icons
+      opacity: 1
+      transition: opacity 1s
+
+.social_icons
+  position: absolute
+  opacity: 0
+  color: #F4F6F7
+  height: 130px
+  font-size: 23px
+  bottom: 10%
+  right: 10%
+  width: 50px
+  display: flex
+  flex-direction: column
+  align-items: center
+  // justify-content: space-around
+  a
+    margin-bottom: 10px

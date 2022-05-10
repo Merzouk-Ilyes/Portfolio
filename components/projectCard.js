@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Tag, Stack, Button } from "@chakra-ui/react";
+import { Tag, Stack, Button,LightMode } from "@chakra-ui/react";
 import { AiFillGithub } from "react-icons/ai";
 import { BsEyeglasses } from "react-icons/bs";
 export default function ProjectCard() {
@@ -31,6 +31,7 @@ export default function ProjectCard() {
           ))}
         </div>
         <Stack direction="row" spacing={4}>
+        <LightMode>
           <Button
             leftIcon={<AiFillGithub />}
             colorScheme="blackAlpha"
@@ -41,6 +42,8 @@ export default function ProjectCard() {
           >
             Github
           </Button>
+          </LightMode>
+          <LightMode>
           <Button
             leftIcon={<BsEyeglasses />}
             colorScheme="yellow"
@@ -49,6 +52,7 @@ export default function ProjectCard() {
           >
             Live demo
           </Button>
+          </LightMode>
         </Stack>
       </div>
     </div>

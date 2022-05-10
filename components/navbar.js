@@ -6,7 +6,9 @@ import {
   DrawerHeader,
   DrawerOverlay,
   DrawerContent,
-  useDisclosure,useColorMode,useColorModeValue
+  useDisclosure,
+  useColorMode,
+  useColorModeValue,
 } from "@chakra-ui/react";
 import { AiOutlineMenu } from "react-icons/ai";
 import { BsFillSunFill } from "react-icons/bs";
@@ -24,8 +26,8 @@ function Navbar() {
   const [mounted, setMounted] = useState(false);
   const { systemTheme, theme, setTheme } = useTheme();
   const { isOpen, onOpen, onClose } = useDisclosure();
-  const { colorMode, toggleColorMode } = useColorMode()
-  const bg = useColorModeValue('white', 'black')
+  const { colorMode, toggleColorMode } = useColorMode();
+  const bg = useColorModeValue("white", "black");
 
   useEffect(() => {
     setMounted(true);
@@ -40,17 +42,24 @@ function Navbar() {
       return (
         <IconButton
           fontSize="22px"
-          colorScheme="white"
-          icon={<BsFillSunFill />}
-          onClick={() => { setTheme("light"); toggleColorMode() }  }
+          colorScheme="blackAlpha"
+          icon={<BsFillSunFill className="text-white" />}
+          onClick={() => {
+            setTheme("light");
+            toggleColorMode();
+          }}
         />
       );
     } else {
       return (
         <IconButton
           fontSize="22px"
-          icon={<MdDarkMode />}
-          onClick={() => { setTheme("dark"); toggleColorMode() } }
+          colorScheme="whiteAlpha"
+          icon={<MdDarkMode className="text-black" />}
+          onClick={() => {
+            setTheme("dark");
+            toggleColorMode();
+          }}
         />
       );
     }
@@ -80,13 +89,7 @@ function Navbar() {
             </a>
           </Link>
 
-          <Link href="/contact">
-            <a
-              className={`${link} dark:before:bg-slate-50 before:bg-[#000000bb] text-gray-400  mx-5 `}
-            >
-              Contact
-            </a>
-          </Link>
+          
           <div className="mx-5">{renderThemeChanger()}</div>
         </div>
       </div>
@@ -96,7 +99,7 @@ function Navbar() {
           className="text-[25px]  text-black  dark:text-white "
           onClick={onOpen}
         />
-        <Drawer placement="top"  bg={bg} onClose={onClose} isOpen={isOpen}>
+        <Drawer placement="top" bg={bg} onClose={onClose} isOpen={isOpen}>
           <DrawerOverlay />
           <DrawerContent bg={bg}>
             <DrawerHeader
@@ -110,7 +113,7 @@ function Navbar() {
                   </a>
                 </Link>
               </div>
-              <div  className="flex justify-center items-center">
+              <div className="flex justify-center items-center">
                 <div className="mx-5">{renderThemeChanger()}</div>
                 <AiOutlineMenu
                   className="text-[25px] dark:text-white "
@@ -143,13 +146,7 @@ function Navbar() {
                   </a>
                 </Link>
 
-                <Link href="/contact">
-                  <a
-                    className={`${link} dark:before:bg-slate-50 before:bg-[#000000bb] text-gray-400  mx-5  my-5`}
-                  >
-                    Contact
-                  </a>
-                </Link>
+               
               </div>
             </DrawerBody>
           </DrawerContent>
