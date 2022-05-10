@@ -2,16 +2,19 @@ import Navbar from "../components/navbar";
 import BgText from "../components/bgText";
 import Layout from "../components/layout";
 import Image from "next/image";
-import { border, card, card0,social_icons } from "../public/sass/card.module.sass";
-import { MdAlternateEmail } from "react-icons/md";
 import {
-  AiOutlineInstagram,
-} from "react-icons/ai";
-import {FiTwitter,FiGithub,FiLinkedin} from "react-icons/fi"
+  border,
+  card,
+  card0,
+  social_icons,
+} from "../public/sass/card.module.sass";
+import { MdAlternateEmail } from "react-icons/md";
+import { AiOutlineInstagram } from "react-icons/ai";
+import { FiTwitter, FiGithub, FiLinkedin } from "react-icons/fi";
 function About() {
   return (
     <Layout>
-      <div className="relative bg-white dark:bg-black ">
+      <div className="relative bg-white dark:bg-black pb-20 ">
         <Navbar />
         <BgText text="About." />
         <h1 className=" mx-[5%] md:mx-[10%]  lg:ml-[20%] text-[40px]  md:text-[50px] lg:text-[60px] text-black dark:text-white font-[700] ">
@@ -28,14 +31,9 @@ function About() {
               started back in 2018 when i created my first travel agency landing
               page and since then i kept exploring the vast world of web
               development from Front-end to Back-end and ultimately DevOps.
+              
               <br />
-              <br />I worked on various full stack project with some of the
-              popular stacks available right now such as the <span>
-                {" "}
-                MERN{" "}
-              </span>{" "}
-              & <span> MEAN </span> stacks. but i also had the opportunity to
-              explore other technologies such as Php/Laravel & Java/SpringBoot .
+           
               <br />
               <span>
                 {" "}
@@ -60,6 +58,7 @@ function About() {
                 height="100%"
                 layout="responsive"
                 objectFit="contain"
+                alt="image"
               />
               <Image
                 src="/../public/images/logos/node.png"
@@ -67,6 +66,7 @@ function About() {
                 height="100%"
                 layout="responsive"
                 objectFit="contain"
+                alt="image"
               />
               <Image
                 src="/../public/images/logos/ng.png"
@@ -74,6 +74,7 @@ function About() {
                 height="100%"
                 layout="responsive"
                 objectFit="contain"
+                alt="image"
               />
               <Image
                 src="/../public/images/logos/js.png"
@@ -81,6 +82,7 @@ function About() {
                 height="100%"
                 layout="responsive"
                 objectFit="contain"
+                alt="image"
               />
               <Image
                 src="/../public/images/logos/ts.png"
@@ -88,6 +90,7 @@ function About() {
                 height="100%"
                 layout="responsive"
                 objectFit="contain"
+                alt="image"
               />
               <Image
                 src="/../public/images/logos/html.png"
@@ -95,6 +98,7 @@ function About() {
                 height="100%"
                 layout="responsive"
                 objectFit="contain"
+                alt="image"
               />
               <Image
                 src="/../public/images/logos/sass.png"
@@ -102,6 +106,7 @@ function About() {
                 height="100%"
                 layout="responsive"
                 objectFit="contain"
+                alt="image"
               />
               <Image
                 src="/../public/images/logos/fire.png"
@@ -109,6 +114,7 @@ function About() {
                 height="100%"
                 layout="responsive"
                 objectFit="contain"
+                alt="image"
               />
               <Image
                 src="/../public/images/logos/lara.png"
@@ -116,6 +122,7 @@ function About() {
                 height="100%"
                 layout="responsive"
                 objectFit="contain"
+                alt="image"
               />
               <Image
                 src="/../public/images/logos/docker.png"
@@ -123,31 +130,10 @@ function About() {
                 height="100%"
                 layout="responsive"
                 objectFit="contain"
+                alt="image"
               />
             </div>
           </div>
-          {/* <div className="relative   ">
-            <Image
-              src="/../public/images/pic1.jpg"
-              alt="Picture of the author"
-              height="450px"
-              width="300px"
-              className="rounded-xl   drop-shadow-2xl z-20  grayscale hover:grayscale-0 transition  delay-150 "
-            />
-            <div
-              className="absolute h-[450px] w-[300px]
-              top-5
-              rounded-xl  z-10
-              left-7
-              border-dashed	
-              border-slate-500	
-              border-2
-              hover:top-0
-              hover:left-0
-                    
-          "
-            ></div>
-          </div> */}
           <div className={`${card} + ${card0}`}>
             <div className={border}>
               <div className={social_icons}>
