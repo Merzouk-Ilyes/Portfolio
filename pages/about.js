@@ -10,7 +10,7 @@ import {
 } from "../public/sass/card.module.sass";
 import { MdAlternateEmail } from "react-icons/md";
 import { AiOutlineInstagram } from "react-icons/ai";
-import { FiTwitter, FiGithub, FiLinkedin } from "react-icons/fi";
+import { FiTwitter, FiGithub, FiLinkedin,FiFacebook } from "react-icons/fi";
 function About() {
   return (
     <Layout>
@@ -28,27 +28,35 @@ function About() {
            text-[15px] md:text-[17px]  w-[380px]  relative z-40  md:w-[550px]  "
             >
               Hello! My name is Merzouk Ilyes, My interest in web development
-              started back in 2018 when i created my first travel agency landing
+              started back in 2018 when i created my first  landing
               page and since then i kept exploring the vast world of web
-              development from Front-end to Back-end and ultimately DevOps.
+              development from FrontEnd to BackEnd and ultimately DevOps.
               
               <br />
            
               <br />
               <span>
                 {" "}
-                Here are the technologies that i&apos;m most proficient at :
+                Here are some of  the technologies that i&apos;m proficient at :
                 <br />
                 <br />
-                Front-End : Html5, Css/Scss/Sass, Javascript ES6+, Typescript,
-                React js/Redux, Next Js, Angular, Jquery.
-                <br />
-                <br />
-                Back-End : Node Js/Express Js, Laravel, SpringBoot, Firebase.
-                <br />
-                <br />
-                DevOps & Version Control : Git, Docker, Google cloud platform,
-                Heroku.
+                <div className="grid grid-cols-2">
+                <ul>
+                  <li>	&#916; React Js - Redux</li>
+                  <li>	&#916; Node Js</li>
+                  <li>	&#916; Angular </li>
+                  <li>	&#916; Spring Boot </li>
+                  <li>	&#916; Laravel </li>
+                </ul>
+                <ul>
+                  <li>	&#916; Javascript ES6+ </li>
+                  <li>	&#916; Typescript </li>
+                  <li>	&#916; MongoDB </li>
+                  <li>	&#916; Docker </li>
+                  <li>	&#916; Git </li>
+                </ul>
+              
+                </div>
               </span>
             </p>
             <div className="grid   grid-cols-5 md:grid-cols-10  gap-4 my-8 ">
@@ -92,8 +100,16 @@ function About() {
                 objectFit="contain"
                 alt="image"
               />
+                <Image
+                  src="/../public/images/logos/lara.png"
+                  width="100%"
+                  height="100%"
+                  layout="responsive"
+                  objectFit="contain"
+                  alt="image"
+                />
               <Image
-                src="/../public/images/logos/html.png"
+                src="/../public/images/logos/boot.png"
                 width="100%"
                 height="100%"
                 layout="responsive"
@@ -109,15 +125,7 @@ function About() {
                 alt="image"
               />
               <Image
-                src="/../public/images/logos/fire.png"
-                width="100%"
-                height="100%"
-                layout="responsive"
-                objectFit="contain"
-                alt="image"
-              />
-              <Image
-                src="/../public/images/logos/lara.png"
+                src="/../public/images/logos/db.png"
                 width="100%"
                 height="100%"
                 layout="responsive"
@@ -148,6 +156,14 @@ function About() {
                   className=" w-fit"
                 >
                   <AiOutlineInstagram />{" "}
+                </a>
+                <a
+                  href="https://www.facebook.com/ilyas.merzouk.90"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className=" w-fit"
+                >
+                  <FiFacebook />{" "}
                 </a>
                 <a
                   href="https://www.linkedin.com/in/merzouk-ilyes-reda-5154a41b6/"

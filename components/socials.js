@@ -1,14 +1,15 @@
 import React from "react";
 import { MdEmail } from "react-icons/md";
 import {
-  AiOutlineInstagram,
+  AiFillInstagram,
   AiOutlineTwitter,
   AiFillGithub,
   AiFillLinkedin,
 } from "react-icons/ai";
+import {FaFacebookF} from "react-icons/fa"
 function Socials() {
   return (
-    <div className="grid grid-cols-5 gap-2 w-[370px]  relative  z-10 dark:text-white text-[27px] text-gray-600 my-8  mx-[5%]  md:mx-[10%] lg:mx-[20%] ">
+    <div className="grid grid-cols-6 gap-2 w-[370px]  relative  z-10 dark:text-white text-[27px] text-gray-600 my-8  mx-[5%]  md:mx-[10%] lg:mx-[20%] ">
       <a
         href="mailto:merzouk.ilyase@gmail.com"  
         className=" w-fit"
@@ -22,7 +23,15 @@ function Socials() {
         rel="noopener noreferrer"
         className=" w-fit"
       >
-        <AiOutlineInstagram />{" "}
+        <AiFillInstagram />{" "}
+      </a>
+      <a
+        href="https://www.facebook.com/ilyas.merzouk.90"
+        target="_blank"
+        rel="noopener noreferrer"
+        className=" w-fit"
+      >
+        <FaFacebookF />{" "}
       </a>
       <a
         href="https://www.linkedin.com/in/merzouk-ilyes-reda-5154a41b6/"

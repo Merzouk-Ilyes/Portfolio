@@ -12,7 +12,7 @@ function Projects() {
         <h1 className=" mx-[5%] md:mx-[10%] lg:ml-[20%]   text-[40px]  md:text-[50px] lg:text-[60px] text-black dark:text-white font-[700] ">
           Projects.
         </h1>
-        <div className="grid  lg:w-[850px]  grid-cols-1  gap-2 lg:grid-cols-2 mt-9 mx-[5%] md:mx-[10%] lg:ml-[20%]    ">
+        <div className="grid  lg:w-[850px]  grid-cols-1  gap-2  mt-9 mx-[5%] md:mx-[10%] lg:ml-[20%]    ">
           <ProjectCard />
           <ProjectCard />
           <ProjectCard />
