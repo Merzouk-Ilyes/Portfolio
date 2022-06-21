@@ -61,7 +61,7 @@ function About() {
             </p>
             <div className="grid   grid-cols-5 md:grid-cols-10  gap-4 my-8 ">
               <Image
-                src="/../public/images/logos/react.png"
+                src="/images/logos/react.png"
                 width="100%"
                 height="100%"
                 layout="responsive"
@@ -69,7 +69,7 @@ function About() {
                 alt="image"
               />
               <Image
-                src="/../public/images/logos/node.png"
+                src="/images/logos/node.png"
                 width="100%"
                 height="100%"
                 layout="responsive"
@@ -77,7 +77,7 @@ function About() {
                 alt="image"
               />
               <Image
-                src="/../public/images/logos/ng.png"
+                src="/images/logos/ng.png"
                 width="100%"
                 height="100%"
                 layout="responsive"
@@ -85,7 +85,7 @@ function About() {
                 alt="image"
               />
               <Image
-                src="/../public/images/logos/js.png"
+                src="/images/logos/js.png"
                 width="100%"
                 height="100%"
                 layout="responsive"
@@ -93,7 +93,7 @@ function About() {
                 alt="image"
               />
               <Image
-                src="/../public/images/logos/ts.png"
+                src="/images/logos/ts.png"
                 width="100%"
                 height="100%"
                 layout="responsive"
@@ -101,7 +101,7 @@ function About() {
                 alt="image"
               />
                 <Image
-                  src="/../public/images/logos/lara.png"
+                  src="/images/logos/lara.png"
                   width="100%"
                   height="100%"
                   layout="responsive"
@@ -109,7 +109,7 @@ function About() {
                   alt="image"
                 />
               <Image
-                src="/../public/images/logos/boot.png"
+                src="/images/logos/boot.png"
                 width="100%"
                 height="100%"
                 layout="responsive"
@@ -117,7 +117,7 @@ function About() {
                 alt="image"
               />
               <Image
-                src="/../public/images/logos/sass.png"
+                src="/images/logos/sass.png"
                 width="100%"
                 height="100%"
                 layout="responsive"
@@ -125,7 +125,7 @@ function About() {
                 alt="image"
               />
               <Image
-                src="/../public/images/logos/db.png"
+                src="/images/logos/db.png"
                 width="100%"
                 height="100%"
                 layout="responsive"
@@ -133,7 +133,7 @@ function About() {
                 alt="image"
               />
               <Image
-                src="/../public/images/logos/docker.png"
+                src="/images/logos/docker.png"
                 width="100%"
                 height="100%"
                 layout="responsive"
