@@ -7,11 +7,16 @@ import Socials from "../components/socials";
 import BgText from "../components/bgText";
 import { motion } from "framer-motion";
 import {LightMode} from "@chakra-ui/react"
+import Head from "next/head";
 
 export default function Home() {
   return (
     // <LightMode>
+    
     <Layout>
+      <Head>
+        <title>MERZOUK ILYES &copy; </title>
+      </Head>
       <div className="h-[100vh]  relative bg-white dark:bg-black ">
         <Navbar />
         <BgText text="Hello, There." />
