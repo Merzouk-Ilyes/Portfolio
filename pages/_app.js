@@ -5,7 +5,7 @@ import { ThemeProvider } from "next-themes";
 import { AnimatePresence } from "framer-motion";
 function MyApp({ Component, pageProps }) {
   return (
-    <ThemeProvider enableSystem={true} attribute="class">
+    <ThemeProvider enableSystem={false} attribute="class">
       <ChakraProvider>
         <AnimatePresence exitBeforeEnter>
           <Component {...pageProps} />

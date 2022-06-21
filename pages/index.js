@@ -23,7 +23,7 @@ export default function Home() {
      <LightMode>
 
         <h1
-          className={`${glitch}  +  mt-9 mx-[5%]  md:mx-[10%] lg:mx-[20%]  text-[40px]  md:text-[50px] lg:text-[60px]  dark:text-white`}
+          className={`${glitch}  +  mt-9 mx-[5%]  md:mx-[10%] lg:mx-[20%]  text-[40px]  md:text-[50px] lg:text-[60px] text-black dark:text-white`}
         >
           <span aria-hidden="true">I&apos;m Merzouk Ilyes</span>
           <span aria-hidden="true">I&apos;m Merzouk Ilyes</span>
