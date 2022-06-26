@@ -39,7 +39,9 @@ function Navbar() {
   const renderThemeChanger = () => {
     if (!mounted) return null;
     const currentTheme = theme === "system" ? systemTheme : theme;
+    console.log("currentTheme: " + currentTheme + bg);
     if (currentTheme === "dark") {
+      bg = "black";
       return (
         <IconButton
           fontSize="22px"
@@ -53,6 +55,7 @@ function Navbar() {
         />
       );
     } else {
+      bg = "white";
       return (
         <IconButton
           fontSize="22px"
