@@ -59,12 +59,12 @@ function Socials() {
         {" "}
         <AiFillGithub />
       </a>
-      <div className="w-fit">
+      <div>
         <Tooltip
           label="+213 558 44 95 41"
           fontSize="large"
           // className="w-fit"
-          // placement="auto"
+          placement="auto"
         >
           <CustomCard ></CustomCard>
         </Tooltip>
@@ -77,7 +77,7 @@ export default Socials;
 
 const CustomCard = React.forwardRef(({ children, ...rest }, ref) => (
   <Tag ref={ref} {...rest}>
-    <BsFillTelephoneFill className="text-[22px]" />
+    <BsFillTelephoneFill className="dark:text-white text-[27px] text-gray-600" />
     </Tag>
 ));
 
