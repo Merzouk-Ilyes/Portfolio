@@ -76,9 +76,9 @@ function Socials() {
 export default Socials;
 
 const CustomCard = React.forwardRef(({ children, ...rest }, ref) => (
-  
-    <BsFillTelephoneFill ref={ref} {...rest} className="dark:text-white text-[27px] text-gray-600" />
-    
+  <div ref={ref} {...rest}>
+    <BsFillTelephoneFill className="dark:text-white text-[27px] text-gray-600" />
+    </div>
 ));
 
 CustomCard.displayName = "CustomCard"
