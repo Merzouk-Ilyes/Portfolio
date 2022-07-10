@@ -51,7 +51,7 @@ function About() {
                 <ul>
                   <li>	&#916; Javascript ES6+ </li>
                   <li>	&#916; Typescript </li>
-                  <li>	&#916; MongoDB </li>
+                  <li>	&#916; Sql/NoSql </li>
                   <li>	&#916; Docker </li>
                   <li>	&#916; Git </li>
                 </ul>
