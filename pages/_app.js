@@ -7,9 +7,9 @@ function MyApp({ Component, pageProps }) {
   return (
     <ThemeProvider enableSystem={false} attribute="class">
       <ChakraProvider>
-        <AnimatePresence exitBeforeEnter>
+        {/* <AnimatePresence exitBeforeEnter> */}
           <Component {...pageProps} />
-        </AnimatePresence>
+        {/* </AnimatePresence> */}
       </ChakraProvider>
     </ThemeProvider>
   );

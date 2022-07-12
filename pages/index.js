@@ -53,7 +53,7 @@ export default function Home() {
           <Link href="mailto:merzouk.ilyase@gmail.com">
             <span className="dark:text-white text-black">
               {" "}
-              merzouk.ilyase@gmail.com.{" "}
+              merzouk.ilyase@gmail.com{" "}
             </span>
           </Link>
         </p>
