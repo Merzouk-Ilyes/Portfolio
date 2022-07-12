@@ -46,7 +46,7 @@ function About() {
                   <li>	&#916; Node Js</li>
                   <li>	&#916; Angular </li>
                   <li>	&#916; Spring Boot </li>
-                  <li>	&#916; Laravel </li>
+                  <li>	&#916; Firebase </li>
                 </ul>
                 <ul>
                   <li>	&#916; Javascript ES6+ </li>
@@ -101,7 +101,7 @@ function About() {
                 alt="image"
               />
                 <Image
-                  src="/images/logos/lara.png"
+                  src="/images/logos/fire.png"
                   width="100%"
                   height="100%"
                   layout="responsive"
