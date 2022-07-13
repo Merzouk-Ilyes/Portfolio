@@ -25,10 +25,10 @@ export default function Home() {
         <h1
           className={`${glitch}  +  mt-9 mx-[5%]  md:mx-[10%] lg:mx-[20%]  text-[40px]  md:text-[50px] lg:text-[60px] text-black dark:text-white`}
         >
-          <span aria-hidden="true">I&apos;m Merzouk Ilyes</span>
-          <span aria-hidden="true">I&apos;m Merzouk Ilyes</span>
-          I&apos;m Merzouk Ilyes
-          <span aria-hidden="true">I&apos;m Merzouk Ilyes</span>
+          <span aria-hidden="true">MERZOUK ILYES REDA</span>
+          <span aria-hidden="true">MERZOUK ILYES REDA</span>
+          MERZOUK ILYES REDA
+          <span aria-hidden="true">MERZOUK ILYES REDA</span>
         </h1>
         <p className="description dark:text-white leading-[35px] text-gray-600 mx-[5%]  md:mx-[10%] lg:mx-[20%]  text-[15px] md:text-[17px] ">
           Full stack web developer, I like to craft solid and scalable products

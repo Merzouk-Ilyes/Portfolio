@@ -27,7 +27,7 @@ function About() {
            leading-[25px] tracking-wide	
            text-[15px] md:text-[17px]  w-[380px]  relative z-40  md:w-[550px]  "
             >
-              Hello! My name is Merzouk Ilyes i&apos;m a 5th year student at HIGHER SCHOOL OF COMPUTER SCIENCE ESI-SBA , My interest in web development
+              Hello! My name is Merzouk Ilyes Reda i&apos;m a 5th year student at HIGHER SCHOOL OF COMPUTER SCIENCE ESI-SBA , My interest in web development
               started back in 2018 when i created my first  website and since then i kept exploring the vast world of web
               development and specifically the  software development lifecycle including analysis, development, testing and deployment.
               currently I&apos;m interested in DevOps, testing & AI.
