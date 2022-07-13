@@ -145,7 +145,7 @@ function About() {
           <div className={`${card} + ${card0}`}>
             <div className={border}>
               <div className={social_icons}>
-                <a href="mailto:merzouk.ilyase@gmail.com" className=" w-fit">
+                <a href="mailto:i.merzouk@esi-sba.dz" className=" w-fit">
                   {" "}
                   <MdAlternateEmail />
                 </a>

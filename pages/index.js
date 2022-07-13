@@ -50,10 +50,10 @@ export default function Home() {
             <span className="dark:text-white text-black"> About Me </span>
           </Link>
           , or send me an email directly at
-          <Link href="mailto:merzouk.ilyase@gmail.com">
+          <Link href="mailto:i.merzouk@esi-sba.dz">
             <span className="dark:text-white text-black">
               {" "}
-              merzouk.ilyase@gmail.com{" "}
+              i.merzouk@esi-sba.dz{" "}
             </span>
           </Link>
         </p>
