@@ -12,7 +12,7 @@ import { FaFacebookF } from "react-icons/fa";
 function Socials() {
   return (
     <div className="grid grid-cols-7 gap-2 w-[370px]  relative  z-10 dark:text-white text-[27px] text-gray-600 my-8  mx-[5%]  md:mx-[10%] lg:mx-[20%] ">
-      <a href="mailto:merzouk.ilyase@gmail.com" className=" w-fit">
+      <a href="mailto:i.merzouk@esi-sba.dz" className=" w-fit">
         {" "}
         <MdEmail />
       </a>
