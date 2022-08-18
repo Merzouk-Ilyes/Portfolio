@@ -33,7 +33,7 @@ function Socials() {
         <AiFillInstagram />{" "}
       </a>
       <a
-        href="https://www.linkedin.com/in/merzouk-ilyes-reda-5154a41b6/"
+        href="https://www.linkedin.com/in/merzouk-ilyes-reda/"
         target="_blank"
         rel="noopener noreferrer"
         className=" w-fit"
