@@ -127,7 +127,7 @@ function About() {
                 alt="image"
               />
               <Image
-              src="/images/logos/pg.png"
+              src="/images/logos/PG.png"
               width="100%"
               height="100%"
               layout="responsive"
