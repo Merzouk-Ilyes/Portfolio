@@ -27,7 +27,7 @@ function About() {
            leading-[25px] tracking-wide	
            text-[15px] md:text-[17px]  w-[380px]  relative z-40  md:w-[550px]  "
             >
-              Hello! My name is Merzouk Ilyes Reda i&apos;m a 5th year student at HIGHER SCHOOL OF COMPUTER SCIENCE ESI-SBA , My interest in web development
+              Hello! My name is Merzouk Ilyes Reda i&apos;m a software engineer from Algeria, My interest in web development
               started back in 2018 when i created my first  website and since then i kept exploring the vast world of web
               development and specifically the  software development lifecycle including analysis, development, testing and deployment.
               currently I&apos;m interested in DevOps, testing & AI.
@@ -42,16 +42,18 @@ function About() {
                 <br />
                 <div className="grid grid-cols-2">
                 <ul>
+                  <li>	&#916; Javascript ES6+ </li>
                   <li>	&#916; React Js - Redux</li>
+                  <li>	&#916; Next Js</li>
                   <li>	&#916; Node Js</li>
-                  <li>	&#916; Angular </li>
-                  <li>	&#916; Spring Boot </li>
-                  <li>	&#916; Firebase </li>
+                  <li>	&#916; Typescript </li>
+                  <li>	&#916; Angular 13+ </li>
+                 
                 </ul>
                 <ul>
-                  <li>	&#916; Javascript ES6+ </li>
-                  <li>	&#916; Typescript </li>
-                  <li>	&#916; Sql/NoSql </li>
+                  <li>	&#916; PostgreSql </li>
+                  <li>	&#916; MongoDB </li>
+                  <li>	&#916; Spring Boot </li>
                   <li>	&#916; Docker </li>
                   <li>	&#916; Git </li>
                 </ul>
@@ -100,14 +102,14 @@ function About() {
                 objectFit="contain"
                 alt="image"
               />
-                <Image
+                {/* <Image
                   src="/images/logos/fire.png"
                   width="100%"
                   height="100%"
                   layout="responsive"
                   objectFit="contain"
                   alt="image"
-                />
+                /> */}
               <Image
                 src="/images/logos/boot.png"
                 width="100%"
@@ -124,6 +126,14 @@ function About() {
                 objectFit="contain"
                 alt="image"
               />
+              <Image
+              src="/images/logos/pg.png"
+              width="100%"
+              height="100%"
+              layout="responsive"
+              objectFit="contain"
+              alt="image"
+            />
               <Image
                 src="/images/logos/db.png"
                 width="100%"
@@ -145,28 +155,13 @@ function About() {
           <div className={`${card} + ${card0}`}>
             <div className={border}>
               <div className={social_icons}>
-                <a href="mailto:i.merzouk@esi-sba.dz" className=" w-fit">
+                <a href="mailto:merzouk.ilyase@gmail.com" className=" w-fit">
                   {" "}
                   <MdAlternateEmail />
                 </a>
+                
                 <a
-                  href="https://www.instagram.com/ilyes17_mk/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className=" w-fit"
-                >
-                  <AiOutlineInstagram />{" "}
-                </a>
-                <a
-                  href="https://www.facebook.com/ilyas.merzouk.90"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className=" w-fit"
-                >
-                  <FiFacebook />{" "}
-                </a>
-                <a
-                  href="https://www.linkedin.com/in/merzouk-ilyes-reda-5154a41b6/"
+                  href="https://www.linkedin.com/in/merzouk-ilyes-reda/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className=" w-fit"
@@ -174,15 +169,7 @@ function About() {
                   {" "}
                   <FiLinkedin />{" "}
                 </a>
-                <a
-                  href="https://twitter.com/IlyesReda17"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className=" w-fit"
-                >
-                  {" "}
-                  <FiTwitter />
-                </a>
+               
                 <a
                   href="https://github.com/Merzouk-Ilyes"
                   target="_blank"

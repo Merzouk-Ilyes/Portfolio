@@ -12,26 +12,26 @@ import { FaFacebookF } from "react-icons/fa";
 function Socials() {
   return (
     <div className="grid grid-cols-7 gap-2 w-[370px]  relative  z-10 dark:text-white text-[27px] text-gray-600 my-8  mx-[5%]  md:mx-[10%] lg:mx-[20%] ">
-      <a href="mailto:i.merzouk@esi-sba.dz" className=" w-fit">
+      <a href="mailto:merzouk.ilyase@gmail.com" className=" w-fit">
         {" "}
         <MdEmail />
       </a>
-      <a
+      {/* <a
         href="https://www.facebook.com/ilyas.merzouk.90"
         target="_blank"
         rel="noopener noreferrer"
         className=" w-fit"
       >
         <FaFacebookF />{" "}
-      </a>
-      <a
+      </a> */}
+      {/* <a
         href="https://www.instagram.com/ilyes17_mk/"
         target="_blank"
         rel="noopener noreferrer"
         className="w-fit"
       >
         <AiFillInstagram />{" "}
-      </a>
+      </a> */}
       <a
         href="https://www.linkedin.com/in/merzouk-ilyes-reda/"
         target="_blank"
@@ -61,7 +61,8 @@ function Socials() {
       </a>
       <div>
         <Tooltip
-          label="+213 558 44 95 41"
+          // label="+213 558 44 95 41"
+          label="+33 7 45 65 74 82"
           fontSize="large"
           // className="w-fit"
           placement="auto"

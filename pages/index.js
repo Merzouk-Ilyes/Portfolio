@@ -31,7 +31,7 @@ export default function Home() {
           <span aria-hidden="true">MERZOUK ILYES REDA</span>
         </h1>
         <p className="description dark:text-white leading-[35px] text-gray-600 mx-[5%]  md:mx-[10%] lg:mx-[20%]  text-[15px] md:text-[17px] ">
-          Full stack web developer, I like to craft solid and scalable products
+          I like to craft solid and scalable products
           with great user experiences.
         </p>
 
@@ -50,10 +50,10 @@ export default function Home() {
             <span className="dark:text-white text-black"> About Me </span>
           </Link>
           , or send me an email directly at
-          <Link href="mailto:i.merzouk@esi-sba.dz">
+          <Link href="mailto:merzouk.ilyase@gmail.com">
             <span className="dark:text-white text-black">
               {" "}
-              i.merzouk@esi-sba.dz{" "}
+              merzouk.ilyase@gmail.com{" "}
             </span>
           </Link>
         </p>
